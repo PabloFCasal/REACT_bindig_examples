@@ -8,14 +8,24 @@ class App extends Component {
     name: 'Estado'
   }
 
+changeStateName = () => {
+  
+  this.setState({
+
+      name: 'New State'
+    
+
+  })
+}
+
 render () {
   return (
     <div className="App">
 
-      <button>Change State</button>
+      <button onClick={this.changeStateName}>Change State</button>
       <br></br>
       <div>{this.state.name}</div>
-      
+
     </div>
   );
 
