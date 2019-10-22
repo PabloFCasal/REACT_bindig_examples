@@ -8,11 +8,11 @@ class App extends Component {
     name: 'Estado'
   }
 
-changeStateName = () => {
+changeStateName = (newStateName) => {
   
   this.setState({
 
-      name: 'New State'
+      name: newStateName
     
 
   })
@@ -22,7 +22,7 @@ render () {
   return (
     <div className="App">
 
-      <button onClick={this.changeStateName}>Change State</button>
+      <button onClick={() => this.changeStateName('Un nuevo estado')}>Change State</button>
       <br></br>
       <div>{this.state.name}</div>
 
