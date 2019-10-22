@@ -5,6 +5,11 @@ class App extends Component {
 
 render () {
 
+  state = {
+
+    name: 'Estado'
+  }
+
   return (
     <div className="App">
       
