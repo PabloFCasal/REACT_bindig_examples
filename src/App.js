@@ -33,7 +33,10 @@ render () {
 
       <button onClick={() => this.changeStateName('Un nuevo estado')}>Change State unsing Anon Function</button>
       <br></br>
-      
+
+      <button onClick={this.changeStateName.bind(this , 'Cambio con bind')} >Change state with .bind</button>
+      <br></br>     
+
       <div>{this.state.name}</div>
       <input type='text' onChange={this.changeNameFromInput}></input>
 
