@@ -38,7 +38,7 @@ render () {
       <br></br>     
 
       <div>{this.state.name}</div>
-      <input type='text' onChange={this.changeNameFromInput}></input>
+      <input type='text' onChange={this.changeNameFromInput} value={this.state.name}></input>
 
     </div>
   );
