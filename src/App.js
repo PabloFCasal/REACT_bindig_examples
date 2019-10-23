@@ -4,8 +4,7 @@ import './App.css';
 class App extends Component {
   
   state = {
-
-    name: 'Estado'
+    name: 'Estado original'
   }
 
 changeStateName = (newStateName) => {
@@ -13,8 +12,7 @@ changeStateName = (newStateName) => {
   this.setState({
 
       name: newStateName
-    
-
+  
   })
 }
 
@@ -33,8 +31,9 @@ render () {
   return (
     <div className="App">
 
-      <button onClick={() => this.changeStateName('Un nuevo estado')}>Change State</button>
+      <button onClick={() => this.changeStateName('Un nuevo estado')}>Change State unsing Anon Function</button>
       <br></br>
+      
       <div>{this.state.name}</div>
       <input type='text' onChange={this.changeNameFromInput}></input>
 
